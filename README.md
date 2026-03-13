@@ -1,17 +1,105 @@
-# smartcheck
+# SmartCheck – Smart Class Check-in & Learning Reflection App
 
-A new Flutter project.
+SmartCheck is a Flutter-based web application designed to simplify classroom attendance and learning reflection. Students can check in to class using QR codes and location verification while instructors can monitor attendance records.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Live Application
 
-A few resources to get you started if this is your first Flutter project:
+Firebase Hosting URL:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+https://smartcheck999.web.app
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## GitHub Repository
+
+https://github.com/6731503036WichayaponSeepin/smartcheck
+
+---
+
+## Features
+
+- User registration and login using Firebase Authentication
+- QR code scanning for classroom check-in
+- GPS location verification
+- Automatic attendance record storage
+- Learning reflection after class
+- Instructor QR code generator
+- Real-time data storage using Firebase Firestore
+
+---
+
+## Technology Stack
+
+Frontend
+- Flutter Web
+- Dart
+
+Backend
+- Firebase Authentication
+- Cloud Firestore
+- Firebase Hosting
+
+---
+
+## Application Pages
+
+- Login Page
+- Register Page
+- Home Page
+- Check-in Page
+- Finish Class Page
+- Instructor QR Page
+
+---
+
+## System Workflow
+
+1. Student registers an account
+2. Student logs into the system
+3. Instructor generates a QR code
+4. Student scans the QR code to check in
+5. System verifies student location
+6. Attendance record is stored in Firestore
+7. Student submits learning reflection
+8. Instructor can review attendance records
+
+---
+
+## Data Structure
+
+### Collection: users
+
+- uid
+- email
+- displayName
+- createdAt
+
+### Collection: attendanceRecords
+
+- studentId
+- sessionCode
+- checkInAt
+- checkInLat
+- checkInLng
+- finishAt
+- learnedToday
+- feedback
+- updatedAt
+
+---
+
+## Deployment
+
+This application is deployed using Firebase Hosting.
+
+Hosting URL:
+https://smartcheck999.web.app
+
+---
+
+## Author
+
+Wichayapon Seepin  
+Mae Fah Luang University
